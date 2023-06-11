@@ -5,6 +5,8 @@
 //  Created by Nikita Belov on 30.05.23.
 //
 
+// MARK: API INFO: https://sv443.net/
+
 import UIKit
 
 struct Joke: Codable {
