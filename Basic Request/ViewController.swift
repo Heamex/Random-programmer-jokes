@@ -121,7 +121,7 @@ class ViewController: UIViewController, JokerViewController {
 				return UIApplication.shared.windows.first
 			}
 			window?.isUserInteractionEnabled = true
-			self.activityIndicator?.startAnimating()
+			self.activityIndicator?.stopAnimating()
 		}
 	}
 	
