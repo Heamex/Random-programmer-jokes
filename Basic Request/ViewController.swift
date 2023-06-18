@@ -72,6 +72,7 @@ class ViewController: UIViewController, JokerViewController {
 	
 	private func drawLoadingIndicator() {
 		let activityIndicator = UIActivityIndicatorView()
+		activityIndicator.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(activityIndicator)
 		activityIndicator.hidesWhenStopped = true
 		if activityIndicator.isAnimating {
@@ -95,7 +96,6 @@ class ViewController: UIViewController, JokerViewController {
 	func sayDelivery() {
 		jokeLabel.text = delivery
 	}
-	
 	
 	@objc private func nextButtonTapped() {
 		if needNewJoke {
@@ -124,7 +124,7 @@ class ViewController: UIViewController, JokerViewController {
 			self.activityIndicator?.startAnimating()
 		}
 	}
-
+	
 }
 
 
